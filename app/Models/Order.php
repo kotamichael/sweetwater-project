@@ -13,10 +13,20 @@ class Order extends Model
     public $incrementing = false;
     public $timestamps = false;
 
-    public function scopeGroup($query, $search = null)
+    public function scopeCategorize($query, $search = null)
     {
         if ($search) {
             $query->where('comments', 'like', '%' . $search . '%');
+        }
+    }
+
+    # $excludedStrings = Category::pluck('name')->all();
+    public function scopeEverythingElse($query, $excludedStrings = null)
+    {
+        if ($excludedStrings) {
+            foreach ($excludedStrings as $string) {
+                $query->where('comments', 'NOT LIKE', '%' . $string . '%');
+            }
         }
     }
 }
