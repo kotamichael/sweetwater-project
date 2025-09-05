@@ -12,4 +12,11 @@ class Order extends Model
     protected $keyType = 'string';
     public $incrementing = false;
     public $timestamps = false;
+
+    public function scopeGroup($query, $search = null)
+    {
+        if ($search) {
+            $query->where('comments', 'like', '%' . $search . '%');
+        }
+    }
 }
