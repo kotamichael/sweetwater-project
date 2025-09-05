@@ -13,13 +13,12 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $categorizedComments = {};
         foreach (Category::all() as $category) {
             $categoryName = $category->name;
-            $categorizedComments[$categoryName] = Order::categorize($categoryName)->get();
+            $categorizedComments[$categoryName] = Order::categorize($category->search_term)->pluck('comments');
         };
-        $categorizedComments["miscellaneous"] = Order::everythingElse(Category::pluck('name')->all())->get();
+        $categorizedComments["miscellaneous"] = Order::everythingElse(Category::pluck('search_term')->all())->pluck('comments');
 
-        return view("'order_report'", compact('categorizedComments'));
+        return view(view: 'order_report', data: compact('categorizedComments'));
     }
 }
