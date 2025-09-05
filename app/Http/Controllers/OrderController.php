@@ -17,7 +17,9 @@ class OrderController extends Controller
         foreach (Category::all() as $category) {
             $categoryName = $category->name;
             $categorizedComments[$categoryName] = Order::categorize($categoryName)->get();
-        }
-        return view("'orders.index'", compact('categorizedComments'));
+        };
+        $categorizedComments["miscellaneous"] = Order::everythingElse(Category::pluck('name')->all())->get();
+
+        return view("'order_report'", compact('categorizedComments'));
     }
 }
