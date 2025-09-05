@@ -14,15 +14,16 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name'); 
+            $table->string('name');
+            $table->string('search_term');
             $table->timestamps();
         });
 
         DB::table('categories')->insert([
-            ['name' => 'candy', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'call me', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'referred', 'created_at' => now(), 'updated_at' => now()],
-            ['name'=> 'signature', 'created_at'=> now(), 'updated_at'=> now()]
+            ['name' => 'Candy Comments', 'search_term' => 'candy', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Call-Me Comments', 'search_term' => 'call me', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Referral Comments', 'search_term' => 'refer', 'created_at' => now(), 'updated_at' => now()],
+            ['name'=> 'Signature Requirement Comments', 'search_term' => 'signature', 'created_at'=> now(), 'updated_at'=> now()]
         ]);
     }
 
