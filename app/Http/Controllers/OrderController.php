@@ -17,7 +17,7 @@ class OrderController extends Controller
             $categoryName = $category->name;
             $categorizedComments[$categoryName] = Order::categorize($category->search_term)->pluck('comments');
         };
-        $categorizedComments["miscellaneous"] = Order::everythingElse(Category::pluck('search_term')->all())->pluck('comments');
+        $categorizedComments["Miscellaneous Comments"] = Order::everythingElse(Category::pluck('search_term')->all())->pluck('comments');
 
         return view(view: 'order_report', data: compact('categorizedComments'));
     }
