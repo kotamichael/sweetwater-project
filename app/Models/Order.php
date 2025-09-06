@@ -13,6 +13,7 @@ class Order extends Model
     public $incrementing = false;
     public $timestamps = false;
 
+    // Categorizes comments based on category search regexp: stored in categories table
     public function scopeCategorize($query, $regexp = null){
         if ($regexp && is_string($regexp)) {
             return $query->whereRaw('comments REGEXP ?', [$regexp]);
@@ -20,6 +21,7 @@ class Order extends Model
         return $query;
     }
 
+    // Gets everything else nto matching the regexps in categories
     public function scopeEverythingElse($query, $excludedRegexps = null){
         if ($excludedRegexps && is_array($excludedRegexps)) {
             foreach ($excludedRegexps as $regexp) {

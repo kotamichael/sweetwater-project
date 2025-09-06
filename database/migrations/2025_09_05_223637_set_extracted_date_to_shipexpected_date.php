@@ -14,7 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         DB::table('sweetwater_test')->get()->each(function ($record) {
-            // Assuming 'source_string_column' contains the date string
+            // Look for date patterns in the comments field (MM/DD/YY)
             if(preg_match(
                 '/\d{2}\/\d{2}\/\d{2}/',
                 $record->comments,
