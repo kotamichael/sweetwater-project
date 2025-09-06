@@ -14,10 +14,9 @@ class SweetwaterTestTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('sweetwater_test')->delete();
-        
+        \DB::table("sweetwater_test")->delete();
+
         \DB::table('sweetwater_test')->insert(array (
             0 => 
             array (
@@ -56,7 +55,7 @@ Expected Ship Date: 01/04/18
                 'orderid' => 27138633,
                 'comments' => 'Hello, Chris N is my sales engineer and always does a great job!      
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             5 => 
             array (
@@ -103,7 +102,7 @@ Expected Ship Date: 01/06/18
                 'orderid' => 28746338,
                 'comments' => 'thanks guys.  have a great labor day
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             11 => 
             array (
@@ -134,14 +133,14 @@ Expected Ship Date: 01/06/18
                 'orderid' => 29118780,
                 'comments' => 'Please leave the package inside the first door in the hallway.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             15 => 
             array (
                 'orderid' => 29242075,
                 'comments' => 'Could you please hold this order and ship when all items are in stock? If possible, just delay shipping until October as I will be out of town until then.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             16 => 
             array (
@@ -197,7 +196,7 @@ Expected Ship Date: 01/05/18
                 'comments' => 'As always thanks for the great prices and customer service. I see the Boss Bag I ordered is not in stock, please ship the pedal now, you can ship the bag when it is available. 
 Big shout out to Frank Gertz, always helpful, I like the fact that he\'ll take the time to research a question and get the right answer....not like other stores that will tell you anything to get the sale!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             23 => 
             array (
@@ -236,14 +235,14 @@ Expected Ship Date: 01/04/18
                 'orderid' => 30029591,
                 'comments' => 'Jordan D had been helping me with my order over the phone.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             28 => 
             array (
                 'orderid' => 30030054,
                 'comments' => 'Thank you!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             29 => 
             array (
@@ -292,7 +291,7 @@ Expected Ship Date: 01/06/18
                 'orderid' => 30136073,
                 'comments' => 'My music instructor referred me to your website. His name is Darryl Valdez.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             35 => 
             array (
@@ -328,7 +327,7 @@ I like bit o honey and smarties!  see you Sir!
 
 Lanny
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             39 => 
             array (
@@ -386,7 +385,7 @@ Expected Ship Date: 01/07/18
                 'orderid' => 30385947,
                 'comments' => 'Thanks, Luke!!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             46 => 
             array (
@@ -402,7 +401,7 @@ Expected Ship Date: 01/05/18
                 'comments' => 'Please make sure that no signature is required for this delivery. Thank you
 James T
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             48 => 
             array (
@@ -426,7 +425,7 @@ Expected Ship Date: 01/05/18
                 'orderid' => 30465762,
                 'comments' => 'Thanks, Josh!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             51 => 
             array (
@@ -469,7 +468,7 @@ Expected Ship Date: 01/05/18
                 'orderid' => 30491532,
                 'comments' => 'Please ship the order to be delivered by September 28 if possible. Later is OK but not earlier. Thank you.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             56 => 
             array (
@@ -488,7 +487,7 @@ Thanks again for your help!
 Robbie Rocks!!
 Sweetwater Rocks!!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             58 => 
             array (
@@ -496,7 +495,7 @@ Sweetwater Rocks!!
                 'comments' => 'Steve H, IBSA
 Rich C, Calvary Church
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             59 => 
             array (
@@ -586,7 +585,7 @@ Expected Ship Date: 01/07/18
 
 I was referred to you by our church liturgical director, Joe Swiss, at St. John Church in Frederick, MD
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             70 => 
             array (
@@ -674,14 +673,14 @@ Expected Ship Date: 01/07/18
                 'orderid' => 30725567,
                 'comments' => 'Please cancel the other order of the Black Hofner Club I made last month.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             81 => 
             array (
                 'orderid' => 30727176,
                 'comments' => 'I have a coupon from my first purchase for 10% off, coupon code 3NC18, please apply.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             82 => 
             array (
@@ -778,7 +777,7 @@ Expected Ship Date: 01/05/18
 
 Thanks!
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             94 => 
             array (
@@ -793,7 +792,7 @@ Expected Ship Date: 01/04/18
                 'orderid' => 30786997,
                 'comments' => 'Please deliver to AWI, to my spouse Wendy by 4:30 PM. Thanks.
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             96 => 
             array (
@@ -825,7 +824,7 @@ Expected Ship Date: 01/05/18
                 'orderid' => 30793565,
                 'comments' => 'I have shopped with Sweetwater before bought my keyboard from Sweetwater
 ',
-                'shipdate_expected' => '0000-00-00 00:00:00',
+                'shipdate_expected' => '1970-01-01 00:00:00',
             ),
             100 => 
             array (
@@ -880,7 +879,7 @@ Expected Ship Date: 01/04/18
             'orderid' => 30798775,
             'comments' => 'Please cancel the first order charcoal charvel for this order. Guitar only though, unless this order guitar comes with a case, in that instance than cancel the first order case. 8059016517 if there are any questions. Thank you and sorry for my bizarre ordering.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         107 => 
         array (
@@ -920,7 +919,7 @@ Expected Ship Date: 01/05/18
             'orderid' => 30799859,
             'comments' => 'Thanks!
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         112 => 
         array (
@@ -936,7 +935,7 @@ Expected Ship Date: 01/04/18
             'comments' => '1. Can I pay off early without Penalty. 
 2 A friend referred me. Chris T of Douglassville Pa.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         114 => 
         array (
@@ -951,7 +950,7 @@ Expected Ship Date: 01/04/18
             'orderid' => 30800150,
             'comments' => 'Please see that my sales tech Tom M receives the sales credit, Roger M
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         116 => 
         array (
@@ -976,7 +975,7 @@ Expected Ship Date: 01/05/18
             'orderid' => 30800510,
             'comments' => 'Will this item be shipped to fedex location? I see where the address is attached with my name for shipping info. My grandson told me. He wants the drumsticks in this order.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         119 => 
         array (
@@ -1050,7 +1049,7 @@ Expected Ship Date: 01/05/18
             'orderid' => 30802083,
             'comments' => 'I\'m also interested in a pickup swap before delivery.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         128 => 
         array (
@@ -1145,7 +1144,7 @@ Expected Ship Date: 01/05/18
             'orderid' => 30803376,
             'comments' => 'My good friend and musical colleague William. Give him a special reward he sold me on Sweetwater over the phone took an hour
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         140 => 
         array (
@@ -1248,7 +1247,7 @@ Gift Instructions: love you alex',
             'orderid' => 30804311,
             'comments' => 'please be careful with these, i don\'t wanna see any bent or broken heads when they get here.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         152 => 
         array (
@@ -1271,7 +1270,7 @@ Expected Ship Date: 01/04/18
             'orderid' => 30804448,
             'comments' => 'If no one is home, please have FedEx place inside front porch area.  Thank You!
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         155 => 
         array (
@@ -1368,21 +1367,21 @@ Expected Ship Date: 01/04/18
             'orderid' => 30805913,
             'comments' => 'Hi.  I was referred to by my friend, John L, of Somerset, MA.  We used to mess around with guitars together in college, and though it\'s been over 20 years since then, I\'m hoping to pick it up again with a lefty guitar of at least fair quality.  He recommended the Jackson, as apparently he got one through your site, himself.  I can\'t wait for it to arrive!
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         166 => 
         array (
             'orderid' => 30805931,
             'comments' => 'i was referred to this product by your sales rep, Alan F.
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         167 => 
         array (
             'orderid' => 30806023,
             'comments' => 'will the next 2 payments of $99.66 automatically come out of my account?
 ',
-            'shipdate_expected' => '0000-00-00 00:00:00',
+            'shipdate_expected' => '1970-01-01 00:00:00',
         ),
         168 => 
         array (
@@ -1474,7 +1473,7 @@ Expected Ship Date: 01/05/18
         'orderid' => 30808342,
         'comments' => 'Shipment is to my APO box in South Korea where I\'m stationed. However, if you put "South Korea" in the shipping label they\'ll send it to the central sorting facility in Seoul instead of straight to me.
 ',
-        'shipdate_expected' => '0000-00-00 00:00:00',
+        'shipdate_expected' => '1970-01-01 00:00:00',
     ),
     179 => 
     array (
@@ -1489,7 +1488,7 @@ Expected Ship Date: 01/05/18
         'orderid' => 30808729,
         'comments' => 'Pick up 9/5/18
 Local Pickup: Please contact the customer when everything is ready for pickup.',
-        'shipdate_expected' => '0000-00-00 00:00:00',
+        'shipdate_expected' => '1970-01-01 00:00:00',
     ),
     181 => 
     array (
@@ -1504,7 +1503,7 @@ Expected Ship Date: 01/04/18
         'orderid' => 30808915,
         'comments' => 'Blessings of Peace!
 ',
-        'shipdate_expected' => '0000-00-00 00:00:00',
+        'shipdate_expected' => '1970-01-01 00:00:00',
     ),
     183 => 
     array (
@@ -1540,7 +1539,7 @@ Expected Ship Date: 01/05/18
 
 Tim
 ',
-        'shipdate_expected' => '0000-00-00 00:00:00',
+        'shipdate_expected' => '1970-01-01 00:00:00',
     ),
     187 => 
     array (
@@ -1583,7 +1582,7 @@ Expected Ship Date: 01/05/18
 
 3) Dylan Driscoll is my sales rep. Please call me if there is any question about the quality of the guitar.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 192 => 
 array (
@@ -1614,7 +1613,7 @@ array (
 'orderid' => 30811478,
 'comments' => 'John my dad referred me to you, this is also my second purchase, I just purchased a VOX amp
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 196 => 
 array (
@@ -1629,7 +1628,7 @@ array (
 'orderid' => 30811670,
 'comments' => 'We are a church and it should be tax exempt we have ordered from you before, it should on file call if any question concerning the tax exempt please and thank you have a great day
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 198 => 
 array (
@@ -1685,7 +1684,7 @@ array (
 'orderid' => 30812370,
 'comments' => 'Please dont send cinnanom candy anymore thanks :)
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 205 => 
 array (
@@ -1743,7 +1742,7 @@ array (
 'orderid' => 30813474,
 'comments' => 'What information do you need about the pleking?
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 212 => 
 array (
@@ -1754,7 +1753,7 @@ thanks!!!
 
 I was referred to these items by sweetwater employee Mike lafratte.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 213 => 
 array (
@@ -1920,7 +1919,7 @@ array (
 'orderid' => 30815465,
 'comments' => 'Thanks!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 232 => 
 array (
@@ -1938,7 +1937,7 @@ array (
 'orderid' => 30815508,
 'comments' => 'Heard about Sweetwater through Paul and Carolyn.  Feel free to call or email me if any question regarding shipping, setup, or if there are any associated special offers with the purchase. I understand I\'ll get the pictured guitar with the serial number listed.  That\'s a great feature, as I can assess the exact finish.  Thank you.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 234 => 
 array (
@@ -1953,7 +1952,7 @@ array (
 'orderid' => 30815610,
 'comments' => 'If for any reason you cannot do this in 3 payments, then cancel my order and i will get it from the PreSonus site. I have been wanting to use Sweetwater, and try out your flexible payment offer. I figured this was the perfect opportunity. Any questions feel free to email or call me at the info listed in my account profile. Thanks you!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 236 => 
 array (
@@ -2238,7 +2237,7 @@ array (
 'orderid' => 30823336,
 'comments' => 'I was referred by my friend Ralph
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 270 => 
 array (
@@ -2317,7 +2316,7 @@ array (
 'orderid' => 30824367,
 'comments' => 'WHERE I GET THE BILL
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 280 => 
 array (
@@ -2358,7 +2357,7 @@ array (
 'orderid' => 30824958,
 'comments' => 'Thank You Bart..
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 285 => 
 array (
@@ -2373,14 +2372,14 @@ array (
 'orderid' => 30825182,
 'comments' => 'Please send tracking when available.  Don\'t call me.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 287 => 
 array (
 'orderid' => 30825358,
 'comments' => 'My sales person is Ryan.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 288 => 
 array (
@@ -2411,7 +2410,7 @@ array (
 'orderid' => 30825927,
 'comments' => 'you must dial 020 at the main entrance for me to buzz you in from my phone.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 292 => 
 array (
@@ -2426,7 +2425,7 @@ array (
 'orderid' => 30825954,
 'comments' => 'Is it possible to specify "rear home" for the FedEx delivery? I currently live in a home behind the main house at the listed address. Thank you!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 294 => 
 array (
@@ -2539,7 +2538,7 @@ array (
 'orderid' => 30827272,
 'comments' => 'It is easy to pay. Do you have the expiration to download the software? If so,how long is the download link avarable ?
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 308 => 
 array (
@@ -2573,7 +2572,7 @@ array (
 'comments' => 'Please call me about the shipping charges before finalizing the order. 
 Thank you.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 312 => 
 array (
@@ -2628,7 +2627,7 @@ array (
 'orderid' => 30828350,
 'comments' => 'will the other payments have to be really soon of the 1st payment?
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 319 => 
 array (
@@ -2636,7 +2635,7 @@ array (
 'comments' => 'Please check Tax
 usually to Hawaii from out of state no tax
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 320 => 
 array (
@@ -2669,7 +2668,7 @@ array (
 
 Terence
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 324 => 
 array (
@@ -2816,7 +2815,7 @@ array (
 'orderid' => 30832736,
 'comments' => 'I ordered this for a Epiphone Les Paul Custom Pro Koa that I ordered yesterday, order # L229511879 that is not in stock.  Please hold the case if it comes in stock before the guitar and ship the guitar in the case once the guitar arrives in stock.  Thanks!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 341 => 
 array (
@@ -2858,7 +2857,7 @@ array (
 'orderid' => 30833571,
 'comments' => 'No matter what I do this still says signature is required for delivery.  I DO NOT want to have to be home to sign.  Please advise.  Thanks
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 346 => 
 array (
@@ -2873,7 +2872,7 @@ array (
 'orderid' => 30833746,
 'comments' => 'Please have the packaged delivered to the side door of the house.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 348 => 
 array (
@@ -2924,28 +2923,28 @@ array (
 'orderid' => 30834447,
 'comments' => 'I was referred by Mr. Carlos Prieto, a close friend of mine who is an active customer of Sweetwater.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 354 => 
 array (
 'orderid' => 30834592,
 'comments' => 'I will be using this to accompany www.Rosados.rocks as they sing 3 songs for the JERSEY CITY 9/11/2018 Memorial with the World Trade Center in the image singing "Brave New American Heroes" & "Spread Peace All Over The World". You guys are great!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 355 => 
 array (
 'orderid' => 30834643,
 'comments' => 'noting
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 356 => 
 array (
 'orderid' => 30834916,
 'comments' => 'Leave on doorstep, no signature required.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 357 => 
 array (
@@ -3018,7 +3017,7 @@ array (
 'orderid' => 30835824,
 'comments' => 'My son in Maryland is a big fan of your site. His name is Gregory (Greg) Bouton
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 366 => 
 array (
@@ -3038,14 +3037,14 @@ I am a Customer have been with sweetwater for quite some time Thanks!
 
 Nicholas F.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 368 => 
 array (
 'orderid' => 30836207,
 'comments' => 'Thank you!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 369 => 
 array (
@@ -3117,14 +3116,14 @@ array (
 'orderid' => 30838227,
 'comments' => 'Please leave package on porch by front door
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 378 => 
 array (
 'orderid' => 30838240,
 'comments' => 'This is a great promotion and is part of what separates your great customer service from the rest!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 379 => 
 array (
@@ -3139,14 +3138,14 @@ array (
 'orderid' => 30838614,
 'comments' => 'PO 70478
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 381 => 
 array (
 'orderid' => 30838634,
 'comments' => 'Patrick, I am not in a hurry to get anything. Please group packages however it makes sense for efficiency. I see the Pod XT isn\'t in stock, nor are some items on my previous order. All this stuff is just back up in case anything goes down during a project. no rush.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 382 => 
 array (
@@ -3169,7 +3168,7 @@ array (
 'orderid' => 30839245,
 'comments' => 'Need it by Friday. Thanks.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 385 => 
 array (
@@ -3224,14 +3223,14 @@ array (
 'orderid' => 30840496,
 'comments' => 'If you guys are out of this headphones please let me know asap so I know what to do, I need them this weekend.
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 392 => 
 array (
 'orderid' => 30840805,
 'comments' => 'Thank you so much! Sweet!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 393 => 
 array (
@@ -3246,7 +3245,7 @@ array (
 'orderid' => 30841226,
 'comments' => 'I would like a full set up on this guitar.  I want it ready to play out of the box.  Thank you!
 ',
-'shipdate_expected' => '0000-00-00 00:00:00',
+'shipdate_expected' => '1970-01-01 00:00:00',
 ),
 ));
         
