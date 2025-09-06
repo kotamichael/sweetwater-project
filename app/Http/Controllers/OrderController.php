@@ -2,23 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Order;
-use Illuminate\Http\Request;
+use App\Services\OrderReportService;
 
 class OrderController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $orderReportService;
+
+    public function __construct(OrderReportService $orderReportService)
+    {
+        $this->orderReportService = $orderReportService;
+    }
+
     public function index()
     {
-        foreach (Category::all() as $category) {
-            $categoryName = $category->name;
-            $categorizedComments[$categoryName] = Order::categorize($category->search_term)->pluck('comments');
-        };
-        $categorizedComments["Miscellaneous Comments"] = Order::everythingElse(Category::pluck('search_term')->all())->pluck('comments');
-
-        return view(view: 'order_report', data: compact('categorizedComments'));
+        $categorizedComments = $this->orderReportService->getCategorizedComments();
+        
+        return view('order_report', compact('categorizedComments'));
     }
 }
