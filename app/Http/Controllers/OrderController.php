@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\OrderReportService;
+use Illuminate\Support\Facades\Log;
 
 class OrderController extends Controller
 {
@@ -13,12 +14,16 @@ class OrderController extends Controller
         $this->orderReportService = $orderReportService;
     }
 
-    public function index()
-    {
+    public function index() {
         // Extracted logic to service to improve testability and separation of concerns
-        // TODO: Needs error handling etc.
-        $categorizedComments = $this->orderReportService->getCategorizedComments();
-        
-        return view('order_report', compact('categorizedComments'));
+        try {
+            $categorizedComments = $this->orderReportService->getCategorizedComments();
+
+            return view('order_report', compact('categorizedComments'));
+        } catch (\Throwable $e) {
+            Log::error('Order report error: ' . $e->getMessage());
+
+            return response()->view('order_report_error', ['error' => 'Unable to load order report.'], 500);
+        }
     }
 }
