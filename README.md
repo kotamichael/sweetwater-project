@@ -1,4 +1,4 @@
-# Sweetwater Takehom Project Reqs
+# Sweetwater Take-home Project
 
 Thanks for your interest in working at Sweetwater! We’re always excited to meet awesome people. We’ve created this test to help us understand your programming chops.
 
