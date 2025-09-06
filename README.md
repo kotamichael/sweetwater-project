@@ -48,6 +48,7 @@ Datetime insert issue: incorrect formatting for newer MySQL. Had to use mass edi
     1. ~~pull all comments and use helper to categorize~~
     2. Simple enough to utilize scopes for string searches for now.
 3. Use migration to update shipexpected_dates into correct date from comment using RegEx
+4. Refine
 
 ## Refinements/TODO
 
