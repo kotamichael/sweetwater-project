@@ -3,20 +3,19 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\OrderReportService;
+use App\Models\Category;
+use App\Models\Order;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     */
     public function register(): void
     {
-        //
+        $this->app->bind(OrderReportService::class, function ($app) {
+            return new OrderReportService(new Category, new Order);
+        });
     }
 
-    /**
-     * Bootstrap any application services.
-     */
     public function boot(): void
     {
         //
