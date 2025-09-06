@@ -15,15 +15,15 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('search_term');
+            $table->text('search_regexp');
             $table->timestamps();
         });
 
         DB::table('categories')->insert([
-            ['name' => 'Candy Comments', 'search_term' => 'candy', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Call-Me Comments', 'search_term' => 'call ', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Referral Comments', 'search_term' => 'refer', 'created_at' => now(), 'updated_at' => now()],
-            ['name'=> 'Signature Requirement Comments', 'search_term' => 'signature', 'created_at'=> now(), 'updated_at'=> now()]
+            ['name' => 'Candy Comments', 'search_regexp' => '(?i)candy', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Call-Me Comments', 'search_regexp' => '(?i)\b(call me|call me if|no phone call|call if|call when|call tomorrow|please call|please call me|call about|feel free to call|do not call|no calls|no phone calls|have [^ ]+ call|confirmation call)\b', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Referral Comments', 'search_regexp' => '(?i)(referred|referral)', 'created_at' => now(), 'updated_at' => now()],
+            ['name'=> 'Signature Requirement Comments', 'search_regexp' => '(?i)(signature)', 'created_at'=> now(), 'updated_at'=> now()]
         ]);
     }
 

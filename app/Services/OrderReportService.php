@@ -13,24 +13,23 @@ class OrderReportService
         $this->orderModel = $orderModel;
     }
     
-    public function getCategorizedComments(): array
-{
-    $categorizedComments = [];
+    public function getCategorizedComments(): array {
+        $categorizedComments = [];
 
-    $categories = $this->categoryModel->all();
-    foreach ($categories as $category) {
-        $categorizedComments[$category->name] = $this->orderModel
+        $categories = $this->categoryModel->all();
+        foreach ($categories as $category) {
+            $categorizedComments[$category->name] = $this->orderModel
+                ->newQuery()
+                ->categorize($category->search_regexp) // <-- use search_regexp
+                ->pluck('comments');
+        }
+
+        $searchRegexps = $categories->pluck('search_regexp')->all(); // <-- use search_regexp
+        $categorizedComments['Miscellaneous Comments'] = $this->orderModel
             ->newQuery()
-            ->categorize($category->search_term)
+            ->everythingElse($searchRegexps)
             ->pluck('comments');
+
+        return $categorizedComments;
     }
-
-    $searchTerms = $categories->pluck('search_term')->all();
-    $categorizedComments['Miscellaneous Comments'] = $this->orderModel
-        ->newQuery()
-        ->everythingElse($searchTerms)
-        ->pluck('comments');
-
-    return $categorizedComments;
-}
 }
