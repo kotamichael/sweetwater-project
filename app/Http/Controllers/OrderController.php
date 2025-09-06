@@ -15,6 +15,8 @@ class OrderController extends Controller
 
     public function index()
     {
+        // Extracted logic to service to improve testability and separation of concerns
+        // TODO: Needs error handling etc.
         $categorizedComments = $this->orderReportService->getCategorizedComments();
         
         return view('order_report', compact('categorizedComments'));
